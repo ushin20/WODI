@@ -39,6 +39,8 @@
                     </button>
                 </div>
             </form>
+
+            <a href="../index.html">뒤로가기</a>
         </div>
 
         <script>
@@ -62,13 +64,7 @@
                     password: password,
                 };
 
-                var currentURL = window.location.href;
-                var protocol = window.location.protocol;
-                var host = window.location.host;
-
-                var nextURL = protocol + "//" + host + "WODI/index.html";
-
-                window.location.replace(nextURL);
+                alert("Success!");
             }
         </script>
     </body>
