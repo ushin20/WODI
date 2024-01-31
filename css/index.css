@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Dovemayo_gothic";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Dovemayo_gothic";
+}
+
+body {
+    max-width: 1024px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Adjust the gap between grid items */
+    margin-top: 10px;
+}
+
+.link {
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(230, 231, 233);
+    background-color: rgb(30, 31, 33);
+    text-decoration: none;
+}

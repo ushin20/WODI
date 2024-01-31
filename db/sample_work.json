@@ -1,0 +1,37 @@
+{
+    "normal": [
+        {
+            "name": "Air Squats",
+            "tool": "body"
+        },
+        {
+            "name": "Jumping Squats",
+            "tool": "body"
+        },
+        {
+            "name": "Pistol Squats",
+            "tool": "body"
+        },
+        {
+            "name": "Box Jump",
+            "tool": "body"
+        },
+        {
+            "name": "Front Plank",
+            "tool": "body"
+        },
+        {
+            "name": "Burpees",
+            "tool": "body"
+        },
+        {
+            "name": "Barbell Thruster",
+            "tool": "barbell"
+        },
+        {
+            "name": "The Overhead Kettlebel",
+            "tool": "kettlebel"
+        }
+    ],
+    "wod": []
+}

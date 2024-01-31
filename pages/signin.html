@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WODI: WOD Instruction</title>
+        <link rel="stylesheet" href="/css/signin.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>회원가입</h1>
+            <form id="signupForm">
+                <div>
+                    <label for="name"></label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="이름"
+                        required />
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="이메일"
+                        required />
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                        placeholder="비밀번호"
+                        required />
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirm-password"
+                        name="password"
+                        placeholder="비밀번호 확인"
+                        required />
+                </div>
+                <div class="btn-container">
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="submitForm()">
+                        가입하기
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function submitForm() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                var confirm_password =
+                    document.getElementById("confirm-password").value;
+
+                if (name.trim() === "") {
+                    alert("이름을 입력하세요.");
+                    return;
+                }
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("올바른 이메일 형식이 아닙니다.");
+                    return;
+                }
+
+                if (password.length < 6) {
+                    alert("비밀번호는 최소 6자리 이상이어야 합니다.");
+                    return;
+                }
+
+                if (password != confirm_password) {
+                    alert("입력하신 비밀번호가 일치하지 않습니다.");
+                    return;
+                }
+
+                var userData = {
+                    name: name,
+                    email: email,
+                    password: password,
+                };
+
+                window.location.href = "/index.html";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Dovemayo_gothic";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Dovemayo_gothic";
+}
+
+body {
+    max-width: 1024px;
+    min-height: calc(100vh - 20px);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 0.4rem solid #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    padding-top: 15px;
+}
+form {
+    padding-bottom: 10px;
+}
+form div {
+    text-align: center;
+}
+
+.form-control {
+    width: 90%;
+    background-color: #f8f9fa;
+    border: 0.1px solid #ccc;
+    padding: 10px;
+    margin-top: 15px;
+}
+.form-control:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid rgb(30, 31, 33);
+    outline: 0;
+    box-shadow: none;
+}
+.btn {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    background: rgb(30, 31, 33);
+    border: 2px solid rgb(30, 31, 33);
+}
+.btn-primary:hover {
+    background-color: rgb(90, 91, 93);
+    border-color: rgb(90, 91, 93);
+    transition: 0.3s;
+}
