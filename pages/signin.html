@@ -95,7 +95,13 @@
                     password: password,
                 };
 
-                window.location.href = "./index.html";
+                var currentURL = window.location.href;
+                var protocol = window.location.protocol;
+                var host = window.location.host;
+
+                var nextURL = protocol + "//" + host + "/index.html";
+
+                window.location.replace(nextURL);
             }
         </script>
     </body>
