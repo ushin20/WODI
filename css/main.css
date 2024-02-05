@@ -60,6 +60,9 @@ body {
     display: flex;
     align-items: center;
 }
+.description .sofarwork {
+    text-align: start;
+}
 .description .sofarwork span {
     font-weight: bold;
     font-size: 1.25em;
@@ -76,5 +79,45 @@ body {
 }
 
 .box-wod {
+    padding: 0 10px;
+}
+.current-wod {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(50, 51, 53);
+    border-radius: 10px;
+}
+.current-wod .wod-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(50, 51, 53);
+    color: white;
+}
+.current-wod .wod-info .wod-title {
+    font-weight: bold;
+}
+.current-wod .one-work {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 10px 20px;
+}
+.current-wod .one-work .name,
+.current-wod .one-work .info {
+    width: 50%;
+}
+
+.upcoming-wod {
     padding: 10px;
+}
+.upcoming-wod .one-wod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
