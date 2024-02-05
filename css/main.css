@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "Dovemayo_gothic";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2")
-        format("woff2");
+    font-family: 'Dovemayo_gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Dovemayo_gothic";
+    font-family: 'Dovemayo_gothic';
 }
 
 body {
@@ -17,4 +16,65 @@ body {
     min-height: calc(100vh - 20px);
     padding: 10px;
     margin: 0 auto;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.user-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.img-container {
+    width: 50px;
+    height: 50px;
+}
+.img-container img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name-and-rank .name,
+.name-and-rank .rank {
+    font-weight: lighter;
+}
+.name-and-rank .rank span {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: green;
+}
+.description {
+    display: flex;
+    align-items: center;
+}
+.description .sofarwork span {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.expired {
+    color: gray;
+}
+
+.box-wod {
+    padding: 10px;
 }
